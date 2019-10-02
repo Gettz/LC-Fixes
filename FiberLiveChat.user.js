@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         LC Fixes
-// @version      3.6
+// @version      3.7
 // @description  Modify LC to better serve Google Fiber
 // @author       Tom L
 // @match        *://my.livechatinc.com/*
@@ -10,12 +10,12 @@
 // @downloadURL  https://raw.githubusercontent.com/Gettz/LC-Fixes/master/FiberLiveChat.user.js
 // ==/UserScript==
 
-var infoPanel = document.createElement ('div');
-infoPanel.innerHTML = '<span>Modified LC, contact <a href="mailto:thomas.leary@telenetwork.com?Subject=UserScript'+
-    ' Error" target="_top">Tom L</a> to report issues</span>';
+//var infoPanel = document.createElement ('div');
+//infoPanel.innerHTML = '<span>Modified LC, contact <a href="mailto:thomas.leary@telenetwork.com?Subject=UserScript'+
+//    ' Error" target="_top">Tom L</a> to report issues</span>';
 
-infoPanel.setAttribute ('id', 'myContainer');
-document.body.appendChild (infoPanel);
+//infoPanel.setAttribute ('id', 'myContainer');
+//document.body.appendChild (infoPanel);
 
 var observer = new MutationObserver(function(mutations, observer) {
     // fired when a mutation occurs
