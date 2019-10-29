@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         LC Fixes
-// @version      3.7
+// @version      3.8
 // @description  Modify LC to better serve Google Fiber
 // @author       Tom L
 // @match        *://my.livechatinc.com/*
@@ -73,7 +73,7 @@ $("#myButton4").click(function(event){
 function openForm () {
     var myURL = (window.location.href).split('?')[0]
     var chatID = myURL.substring(myURL.length - 10);
-    if (chatID.startsWith("P") == true) {
+    if (chatID.startsWith("Q") == true) {
 //        GM_setClipboard (chatID);
         window.open('https://docs.google.com/forms/d/e/1FAIpQLScYyaSSAmiVmnkT5pVUAl' +
                     'B-5_L7lV6Bu3UzClYWUBr5Zv8wYA/viewform?entry.1193564413=' + chatID,'targetWindow','left=1000px'+
@@ -94,7 +94,7 @@ function integration() {
         email = ''
     }
     else {
-        if (chatID.startsWith("P") == true) {
+        if (chatID.startsWith("Q") == true) {
             window.open('https://fiber-customer-support.corp.google.com/fiber/InboundContact?channel=Chat&chat_id=' + chatID +
                         '&email=' + email, '_blank');return false;
         }
