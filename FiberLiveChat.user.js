@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         LC Fixes
-// @version      3.8
+// @version      3.9
 // @description  Modify LC to better serve Google Fiber
 // @author       Tom L
 // @match        *://my.livechatinc.com/*
@@ -88,8 +88,8 @@ function openForm () {
 function integration() {
     var myURL = (window.location.href).split('?')[0]
     var chatID = myURL.substring(myURL.length - 10);
-    var classCount = document.getElementsByClassName('css-1nnk0sh css-1t1mijt9').length;
-    var email = document.getElementsByClassName('css-1nnk0sh css-1t1mijt9')[classCount - 1].innerHTML
+    var classCount = document.getElementsByClassName('css-1nnk0sh css-ahr9p49').length;
+    var email = document.getElementsByClassName('css-1nnk0sh css-ahr9p49')[classCount - 1].innerHTML
     if (email == null) {
         email = ''
     }
