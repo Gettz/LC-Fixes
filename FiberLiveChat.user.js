@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         LC Fixes
-// @version      3.9.1
+// @version      3.9.2
 // @description  Modify LC to better serve Google Fiber
 // @author       Tom L
 // @match        *://my.livechatinc.com/*
@@ -45,8 +45,9 @@ document.body.appendChild(csatNode);
 var divGroup = document.createElement('div');
 divGroup.setAttribute('class','btn-group')
 divGroup.innerHTML = '<button id="myButton2" type="button"> T2 Assist </button>' +
-    '<button id="myButton3" type="button"> KC | TX UT | CA </button>' +
-    '<button id="myButton4" type="button"> GA | NC TN | AL </button>';
+    '<button id="myButton3" type="button"> AUS/KC OC/SAT </button>' +
+    '<button id="myButton4" type="button"> ATL/HSV BNA </button>' +
+    '<button id="myButton5" type="button"> CLT/SLC RDU </button>';
 document.body.appendChild(divGroup);
 
 $("#myButton").click(function(event){
@@ -69,6 +70,9 @@ $("#myButton4").click(function(event){
     openLC(9);
 });
 
+$("#myButton5").click(function(event){
+    openLC(17);
+});
 // collects chatID and opens csat Dispute form in new window if on correct page
 function openForm () {
     var myURL = (window.location.href).split('?')[0]
