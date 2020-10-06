@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         LC Fixes
-// @version      3.9.3
+// @version      3.9.4
 // @description  Modify LC to better serve Google Fiber
 // @author       Tom L
 // @match        *://my.livechat.com/*
 // @include      *://legacy.livechat.com/*
+// @include      *://my.livechatinc.com/*
 // @grant        GM_addStyle
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js
 // @updateURL    https://raw.githubusercontent.com/Gettz/LC-Fixes/master/FiberLiveChat.user.js
