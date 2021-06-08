@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LC Fixes
 // @version      3.9.5
-// @description  Modify LC to better serve Google Fiber
+// @description  Modify LC to better serve GF
 // @author       Tom L
 // @match        *://my.livechat.com/*
 // @include      *://legacy.livechat.com/*
