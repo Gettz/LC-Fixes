@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         LC Fixes
-// @version      3.9.4
+// @version      3.9.5
 // @description  Modify LC to better serve Google Fiber
 // @author       Tom L
 // @match        *://my.livechat.com/*
@@ -47,9 +47,9 @@ document.body.appendChild(csatNode);
 var divGroup = document.createElement('div');
 divGroup.setAttribute('class','btn-group')
 divGroup.innerHTML = '<button id="myButton2" type="button"> T2 Assist </button>' +
-    '<button id="myButton3" type="button"> AUS/KC OC/SAT </button>' +
-    '<button id="myButton4" type="button"> ATL/HSV BNA </button>' +
-    '<button id="myButton5" type="button"> CLT/SLC RDU </button>';
+    '<button id="myButton3" type="button"> KC/AUS SAT/OC </button>' +
+    '<button id="myButton4" type="button"> Nash / HSV </button>' +
+    '<button id="myButton5" type="button"> SLC/RDU ATL/KC </button>';
 document.body.appendChild(divGroup);
 
 $("#myButton").click(function(event){
