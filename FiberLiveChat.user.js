@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         LC Fixes
-// @version      3.9.5
+// @version      3.9.6
 // @description  Modify LC to better serve GF
 // @author       Tom L
 // @match        *://my.livechat.com/*
@@ -79,7 +79,7 @@ $("#myButton5").click(function(event){
 function openForm () {
     var myURL = (window.location.href).split('?')[0]
     var chatID = myURL.substring(myURL.length - 10);
-    if (chatID.startsWith("Q") == true) {
+    if (chatID.startsWith("R") == true) {
 //        GM_setClipboard (chatID);
         window.open('https://docs.google.com/forms/d/e/1FAIpQLScYyaSSAmiVmnkT5pVUAl' +
                     'B-5_L7lV6Bu3UzClYWUBr5Zv8wYA/viewform?entry.1193564413=' + chatID,'targetWindow','left=1000px'+
@@ -100,7 +100,7 @@ function integration() {
         email = ''
     }
     else {
-        if (chatID.startsWith("Q") == true) {
+        if (chatID.startsWith("R") == true) {
             window.open('https://fiber-customer-support.corp.google.com/fiber/InboundContact?channel=Chat&chat_id=' + chatID +
                         '&email=' + email, '_blank');return false;
         }
